@@ -8,7 +8,7 @@ phases:
   pre_build:
     run-as: root
     commands:
-        - systemctl enable --now httpd
+        - systemctl enable httpd
   build:
     commands:
         - echo nothing to do in the build phase.
