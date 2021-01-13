@@ -2,11 +2,11 @@ version: 0.2
 
 phases:
   install: 
-     run-as: root
+    run-as: root
     commands:
         -yum install -y httpd
   pre_build:
-     run-as: root
+    run-as: root
     commands:
 	- systemctl enable httpd
         - systemctl start httpd
