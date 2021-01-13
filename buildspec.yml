@@ -9,7 +9,7 @@ phases:
     run-as: root
     commands:
         - systemctl enable httpd
-        - systemctl start httpd
+        - systemctl start httpd.service
   build:
     commands:
         - echo nothing to do in the build phase.
