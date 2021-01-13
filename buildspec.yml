@@ -4,15 +4,15 @@ phases:
   install: 
     run-as: root
     commands:
-        -yum install -y httpd
+        - yum install -y httpd
   pre_build:
     run-as: root
     commands:
-	- systemctl enable httpd
+        - systemctl enable httpd
         - systemctl start httpd
   build:
     commands:
-	- echo nothing to do in the build phase.
+        - echo nothing to do in the build phase.
   post_build:
     commands:
         - echo nothing to do in the post build phase.  
